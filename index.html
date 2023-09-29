@@ -19,75 +19,364 @@
       crossorigin="anonymous"
     />
     <style>
-        .body{
-            font-family: 'Montserrat', sans-serif;
-            background-image: url(./images/Card-Front.png);
-            
-            background-repeat: no-repeat;
-            background-size:cover;
-            background-position: center;
-        }
-        .green {
-            color: #00903a;
-        }
-        .red{
-            color: #ee181d;
-        }
-        .gray{
-            color: #7f8081;
-
-        }
-        .font-size{
-          font-size: 3vw;
-        }
-        .letter-spacing{
-            letter-spacing: 4px;
-        }
-        .hover-effect-1{
-          transition:ease-in all .3s;
-        }
-        .hover-effect-1:hover{
-          transform: scale(1.2);
-        }
-        .logo{
-          position:absolute;
-          bottom:20%;
-          right: 10%;
-        }
-        .front-last{
-          background-color: #95abce77;
-          display: inline-block;
-          padding: 10px;
-          font-size:3.5vw;
-          text-align: center;
-          position: absolute;
-          bottom: 8%;
-          left: 8%;
-        }
-        
+      .card-body {
+        background-image: url(./images/Card-Front.png);
+        height: 35vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .back-body {
+        background-image: url(./images/Back-bg.png);
+        height: 35vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-image: url(./images/a.png);
+        height: 35vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+      .green {
+        color: #00903a;
+      }
+      .red {
+        color: #ee181d;
+      }
+      .gray {
+        color: #7f8081;
+      }
+      .font-size {
+        font-size: 1vw;
+      }
+      .font-size2 {
+        font-size: 0.5vw;
+      }
+      .font-size3 {
+        font-size: 0.4vw;
+      }
+      .letter-spacing {
+        letter-spacing: 4px;
+      }
+      .hover-effect-1 {
+        transition: ease-in all 0.3s;
+      }
+      .hover-effect-1:hover {
+        transform: scale(1.1);
+      }
+      .logo {
+        position: absolute;
+        bottom: 22%;
+        right: 8%;
+      }
+      .front-last {
+        background-color: #95abce77;
+        display: inline-block;
+        padding: 10px;
+        font-size: 0.8vw;
+        text-align: center;
+        position: absolute;
+        bottom: 2%;
+        left: 15%;
+      }
+      .relative {
+        position: relative;
+      }
+      .width {
+        width: 60%;
+      }
     </style>
     <title>Health_Card_HUPBD</title>
   </head>
-  <bod class="m-12">
-    <section class="body vh-100 position-relative py-4 w-100 mx-auto">
-        <div
-            class="container mx-auto text-center">
-            <div class=" ">
-                <h1 class="green fw-bold font-size">Help Unity Programme Bangladesh</h1>
-                <h3 class="red fw-bold text-center font-size">Smart Donor Card</h3>
-            </div>
-            <div class="py-3 ">
-                <h4 class="  gray letter-spacing  font-size">Donor Number: ASD657HGY7</h4>
-                <h4 class="  gray letter-spacing  font-size">Name: Syed Faridul Alam</h4>
-            </div>
+  <body class="">
+    <div class="d-flex justify-content-around width mx-auto">
+      <section class="card-body position-relative mt-3 me-2 w-50">
+        <div class="container mx-auto text-center">
+          <div class=" ">
+            <h1 class="green fw-bold font-size">
+              Help Unity Programme Bangladesh
+            </h1>
+            <h3 class="red fw-bold text-center font-size">Smart Donor Card</h3>
+          </div>
+          <div class="py-3">
+            <h4 class="gray letter-spacing font-size">
+              Donor Number: ASD657HGY7
+            </h4>
+            <h4 class="gray letter-spacing font-size">
+              Name: Syed Faridul Alam
+            </h4>
+          </div>
         </div>
         <div class="">
-            <a href="https://www.hupbd.org/" target="_blank" class=""><img src="./images/logo.png" alt="HUPBD Logo " class=" logo hover-effect-1" width="20%"></a>
+          <a href="https://www.hupbd.org/" target="_blank" class=""
+            ><img
+              src="./images/logo.png"
+              alt="HUPBD Logo "
+              class="logo hover-effect-1"
+              width="10%"
+          /></a>
         </div>
         <div>
-          <h3 class="front-last">আপনার ১ ব্যাগ রক্ত ১ জনের জীবন বাচাতে সহায়তা করবে</h3>
+          <h3 class="front-last">
+            আপনার ১ ব্যাগ রক্ত ১ জনের জীবন বাঁচাতে সহায়তা করবে
+          </h3>
         </div>
-    </section>
+      </section>
+      <section class="back-body position-relative w-50 my-3 ms-2">
+        <div class="container mx-auto">
+          <div class=" ">
+            <h2 class="fw-bolder pt-3 font-size2 text-center">
+              আমরা সম্মানিত প্রফেসর ডঃ সৈয়দ সালেহীন কাদরী এবং বাংলাদেশী শিশুদের
+              জন্য থ্যালাসেমিয়া মুক্ত ভবিষ্যতের স্বপ্নের কথা স্মরণ করি, আমরা
+              সবাইকে রক্তনাতা হয়ে অদের ভূমিকা পালন করর জন্য আমন্ত্রণ জানাই।
+            </h2>
+          </div>
+          <div class="">
+            <h4 class="fw-bold font-size">Facilities</h4>
+            <ol class="font-size3 fw-bolder d-flex gap-3 flex-wrap">
+              <li>Health Discount</li>
+              <li>Skill Development</li>
+              <li>Travel Agency</li>
+              <li>University Waiver</li>
+              <li>AI Doctor Support</li>
+            </ol>
+          </div>
+
+          <div>
+            <h3 class="font-size fw-bold text-center">Conditions</h3>
+            <ol class="font-size2 fw-bolder">
+              <li>
+                This card is the property of HUPBD and non non-transferable.
+              </li>
+              <li>
+                This card will remain valid till the holder is in service of the
+                organization.
+              </li>
+            </ol>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <h3 class="font-size fw-bold">Contact Us:</h3>
+              <p class="font-size3 fw-bolder">
+                Phone: +8801970 248 241 <br />
+                E-mail: info@hupbd.org <br />
+                House-330, Block-Ta, Road- AV1, Mirpur Pallabi Section-12 <br />
+                Dhaka-1216 Bangladesh
+              </p>
+            </div>
+            <div class="w-50">
+              <a href="https://www.hupbd.org/" target="_blank" class="">
+                <img
+                  src="./images/logo.png"
+                  alt="HUPBD logo"
+                  width="20%"
+                  class="me-2 hover-effect-1"
+              /></a>
+              <a href="https://kikinbo.com/" target="_blank"
+                ><img
+                  src="./images/Kikinbo.png"
+                  alt="Kikinbo logo"
+                  width="20%"
+                  class="hover-effect-1"
+              /></a>
+              <a href="https://www.ideshi.org/ " target="_blank">
+                <img
+                  src="./images/ideSHi.png"
+                  alt="ideSHi logo"
+                  width="20%"
+                  class="ms-2 hover-effect-1"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="w-50 mx-auto">
+      <h2 class="green fw-bold mt-5 text-center">Card Facilities</h2>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Health Discount
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li class="fw-bolder">
+                  Hospital01 <span class="red fw-bold ms-2">05%</span>
+                </li>
+                <li class="fw-bolder">
+                  Hospital01 <span class="red fw-bold ms-2">05%</span>
+                </li>
+                <li class="fw-bolder">
+                  Hospital01 <span class="red fw-bold ms-2">05%</span>
+                </li>
+                <li class="fw-bolder">
+                  Hospital01 <span class="red fw-bold ms-2">05%</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Skill Development
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li class="fw-bolder">
+                  Skill Development <span class="fw-bold red ms-2">05%</span>
+                </li>
+                <li class="fw-bolder">
+                  Skill Development <span class="fw-bold red ms-2">05%</span>
+                </li>
+                <li class="fw-bolder">
+                  Skill Development <span class="fw-bold red ms-2">05%</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Travel Agency
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li class="fw-bolder">
+                  Travel Agency <span class="fw-bold red ms-2">05%</span>
+                </li>
+                <li class="fw-bolder">
+                  Travel Agency <span class="fw-bold red ms-2">05%</span>
+                </li>
+                <li class="fw-bolder">
+                  Travel Agency <span class="fw-bold red ms-2">05%</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button
+              class="accordion-button collapsed fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+            University Waiver
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li class="fw-bolder">
+                  University Waiver <span class="fw-bold red ms-2">05%</span>
+                </li>
+                <li class="fw-bolder">
+                  University Waiver <span class="fw-bold red ms-2">05%</span>
+                </li>
+                <li class="fw-bolder">
+                  University Waiver <span class="fw-bold red ms-2">05%</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button
+              class="accordion-button collapsed fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+            
+AI Doctor Support
+            </button>
+          </h2>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFive"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li class="fw-bolder">
+                  University Waiver <span class="fw-bold red ms-2">05%</span>
+                </li>
+                <li class="fw-bolder">
+                  University Waiver <span class="fw-bold red ms-2">05%</span>
+                </li>
+                <li class="fw-bolder">
+                  University Waiver <span class="fw-bold red ms-2">05%</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
