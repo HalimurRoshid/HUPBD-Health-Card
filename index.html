@@ -90,12 +90,50 @@
       .width {
         width: 60%;
       }
+      @media screen and (max-width:576px) {
+        .facilities{
+          width: 100% !important;
+        }
+        .card-section{
+          width:96% !important;
+          margin: 0 2% !important;
+          gap: 2%; 
+        }
+        .card-1{
+          height: 18vh;
+        }
+        .front-last{
+          left: 20%;
+        }  .front-last{
+          left: 25%;
+        }
+      }
+      @media screen and (min-width: 577px) and (max-width: 1060px) {
+        .facilities{
+          width: 100% !important;
+        }
+      .font-size{
+        font-size: 1.5vw;
+      }
+        .card-section{
+          width:90% !important;
+          margin: 0 5% !important;
+          gap: 5%; 
+        }
+        .card-1{
+          margin-top: 1%;
+          height: 22vh;
+        }
+        .front-last{
+          left: 20%;
+        }
+      }
     </style>
     <title>Health_Card_HUPBD</title>
   </head>
   <body class="">
-    <div class="d-flex justify-content-around width mx-auto">
-      <section class="card-body position-relative mt-3 me-2 w-50">
+    <div class="d-flex justify-content-around width mx-auto card-section">
+      <section class="card-body position-relative mt-3 me-2 w-50  card-1">
         <div class="container mx-auto text-center">
           <div class=" ">
             <h1 class="green fw-bold font-size">
@@ -103,7 +141,7 @@
             </h1>
             <h3 class="red fw-bold text-center font-size">Smart Donor Card</h3>
           </div>
-          <div class="py-3">
+          <div class="py-3 paddin-remove">
             <h4 class="gray letter-spacing font-size">
               Donor Number: ASD657HGY7
             </h4>
@@ -121,13 +159,13 @@
               width="10%"
           /></a>
         </div>
-        <div>
+        <div class=""> 
           <h3 class="front-last">
             আপনার ১ ব্যাগ রক্ত ১ জনের জীবন বাঁচাতে সহায়তা করবে
           </h3>
         </div>
       </section>
-      <section class="back-body position-relative w-50 my-3 ms-2">
+      <section class="back-body position-relative w-50 my-3 ms-2 card-1">
         <div class="container mx-auto">
           <div class=" ">
             <h2 class="fw-bolder pt-3 font-size2 text-center">
@@ -197,7 +235,7 @@
         </div>
       </section>
     </div>
-    <div class="w-50 mx-auto">
+    <div class="w-50 mx-auto facilities">
       <h2 class="green fw-bold mt-5 text-center">Card Facilities</h2>
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
@@ -362,15 +400,7 @@ AI Doctor Support
           >
             <div class="accordion-body">
               <ul>
-                <li class="fw-bolder">
-                  University Waiver <span class="fw-bold red ms-2">05%</span>
-                </li>
-                <li class="fw-bolder">
-                  University Waiver <span class="fw-bold red ms-2">05%</span>
-                </li>
-                <li class="fw-bolder">
-                  University Waiver <span class="fw-bold red ms-2">05%</span>
-                </li>
+                <li class="fw-bolder red">This facility is only for app users                </li>
               </ul>
             </div>
           </div>
